@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: gcp-demo
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: vvaidya
+Implementation-Vendor-Id: com.priceline.gcp
+Build-Jdk: 1.8.0_161
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/gcp-demo
+Created-By: Maven Integration for Eclipse
+
