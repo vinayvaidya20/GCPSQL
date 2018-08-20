@@ -29,5 +29,11 @@ public class HelloWorldController {
 		    }
 		return "Hello, "+name+" "+lastNAME;
 	}
+	
+	@RequestMapping(method = RequestMethod.GET, value = "/")
+	public String getResult(){
+	
+		return "SUCCESS";
+	}
 
 }
