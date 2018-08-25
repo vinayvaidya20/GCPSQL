@@ -25,7 +25,7 @@ static	Connection connection = null;
 	    // The database from which to list tables.
 	    String databaseName = "TestDatabase";
 
-	    String username = "root";
+	    String username = "proxyuser";
 
 	    // TODO: fill this in
 	    // This is the password that was set via the Cloud Console or empty if never set
