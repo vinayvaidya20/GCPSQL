@@ -31,7 +31,7 @@ public class HelloWorldController {
 	}
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/")
-	public String getResult(){
+	public String getResult() throws SQLException {
 	
 		return "SUCCESS"+GcpDemoApplication.getConnection();
 	}
