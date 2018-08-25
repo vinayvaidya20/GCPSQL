@@ -33,7 +33,7 @@ public class HelloWorldController {
 	@RequestMapping(method = RequestMethod.GET, value = "/")
 	public String getResult(){
 	
-		return "SUCCESS";
+		return "SUCCESS"+GcpDemoApplication.getConnection();
 	}
 
 }
