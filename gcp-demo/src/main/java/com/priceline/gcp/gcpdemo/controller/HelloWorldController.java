@@ -52,7 +52,7 @@ public class HelloWorldController {
 	    //[START doc-example]
 	    
 	    String jdbcUrl = String.format(
-	        "jdbc:mysql://127.0.0.1:5432/%s?cloudSqlInstance=%s"
+	        "jdbc:mysql://127.0.0.1:3306/%s?cloudSqlInstance=%s"
 	            + "&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false",
 	        databaseName,
 	        instanceConnectionName);
@@ -115,7 +115,7 @@ public class HelloWorldController {
 	    //[START doc-example]
 	    
 	    String jdbcUrl = String.format(
-	        "jdbc:mysql://127.0.0.1:5432/%s?cloudSqlInstance=%s"
+	        "jdbc:mysql://127.0.0.1:3306/%s?cloudSqlInstance=%s"
 	            + "&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false",
 	        databaseName,
 	        instanceConnectionName);
