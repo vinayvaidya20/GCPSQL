@@ -43,8 +43,13 @@ static	Connection connection = null;
 	    }
 
 	    //[START doc-example]
-	    
-	    String jdbcUrl = "jdbc:mysql://127.0.0.1:3306/TestDatabase";
+/*	    
+	    String jdbcUrl = String.format(
+	        "jdbc:mysql://127.0.0.1:3306/%s?cloudSqlInstance=%s"
+	            + "&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false",
+	        databaseName,
+	        instanceConnectionName);*/
+	    String jdbcUrl = "jdbc:mysql://127.0.0.1:3306/TestDatabase?useSSL=false";
 		 connection = DriverManager.getConnection(jdbcUrl, username, password);
 	   //[END doc-example]
 
