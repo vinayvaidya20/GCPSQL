@@ -51,7 +51,7 @@ public class HelloWorldController {
 
 	    //[START doc-example]
 	    
-		String jdbcUrl = "jdbc:mysql://127.0.0.1:3306/TestDatabase";
+	    String jdbcUrl = "jdbc:mysql://127.0.0.1:3306/TestDatabase?useSSL=false";
 		Connection connection1 = DriverManager.getConnection(jdbcUrl, username, password);
 	   //[END doc-example]
 
@@ -110,7 +110,7 @@ public class HelloWorldController {
 
 	    //[START doc-example]
 	    
-	    String jdbcUrl = "jdbc:mysql://127.0.0.1:3306/TestDatabase";
+	    String jdbcUrl = "jdbc:mysql://127.0.0.1:3306/TestDatabase?useSSL=false";
 		Connection connection2 = DriverManager.getConnection(jdbcUrl, username, password);
 	   //[END doc-example]
 
