@@ -45,7 +45,7 @@ static	Connection connection = null;
 	    //[START doc-example]
 	    
 	    String jdbcUrl = String.format(
-	        "jdbc:mysql://google/%s?cloudSqlInstance=%s"
+	        "jdbc:mysql://127.0.0.1:3306/%s?cloudSqlInstance=%s"
 	            + "&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false",
 	        databaseName,
 	        instanceConnectionName);
