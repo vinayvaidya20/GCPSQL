@@ -68,7 +68,7 @@ public class HelloWorldController {
 	  
 		
 		
-	    try (Statement statement = connection.createStatement()) {
+	    try (Statement statement = connection1.createStatement()) {
 		      ResultSet resultSet = statement.executeQuery("select * from Persons");
 		      while (resultSet.next()) {
 		        System.out.println(resultSet.getInt(1));
