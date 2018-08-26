@@ -51,11 +51,7 @@ public class HelloWorldController {
 
 	    //[START doc-example]
 	    
-	    String jdbcUrl = String.format(
-	        "jdbc:mysql://127.0.0.1:3306/%s?cloudSqlInstance=%s"
-	            + "&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false",
-	        databaseName,
-	        instanceConnectionName);
+		String jdbcUrl = "jdbc:mysql://127.0.0.1:3306/TestDatabase";
 		Connection connection1 = DriverManager.getConnection(jdbcUrl, username, password);
 	   //[END doc-example]
 
@@ -114,11 +110,7 @@ public class HelloWorldController {
 
 	    //[START doc-example]
 	    
-	    String jdbcUrl = String.format(
-	        "jdbc:mysql://127.0.0.1:3306/%s?cloudSqlInstance=%s"
-	            + "&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false",
-	        databaseName,
-	        instanceConnectionName);
+	    String jdbcUrl = "jdbc:mysql://127.0.0.1:3306/TestDatabase";
 		Connection connection2 = DriverManager.getConnection(jdbcUrl, username, password);
 	   //[END doc-example]
 
