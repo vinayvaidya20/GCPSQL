@@ -56,10 +56,10 @@ public class HelloWorldController {
 	            + "&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false",
 	        databaseName,
 	        instanceConnectionName);
-		Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
+		Connection connection1 = DriverManager.getConnection(jdbcUrl, username, password);
 	   //[END doc-example]
 
-	    try (Statement statement = connection.createStatement()) {
+	    try (Statement statement = connection1.createStatement()) {
 	      ResultSet resultSet = statement.executeQuery("SHOW TABLES");
 	      while (resultSet.next()) {
 	        System.out.println(resultSet.getString(1));
@@ -119,10 +119,10 @@ public class HelloWorldController {
 	            + "&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false",
 	        databaseName,
 	        instanceConnectionName);
-		Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
+		Connection connection2 = DriverManager.getConnection(jdbcUrl, username, password);
 	   //[END doc-example]
 
-		return "Hello, "+" "+connection;
+		return "Hello, "+" "+connection2;
 	}
 
 }
